@@ -1,0 +1,25 @@
+.header
+	display block
+	text-align center
+	&__title
+		position relative
+		margin 0 auto
+		padding-bottom 30px
+		font-size 50px
+		text-transform uppercase
+		max-width 800px
+		&:after
+			display block
+			position absolute
+			left 50%
+			transform translateX(-50%)
+			bottom 0
+			content ''
+			width 300px
+			border-bottom 1px solid red
+	&__subtitle
+		margin 30px auto
+		font-size 24px
+		text-transform uppercase
+		max-width 800px
+
