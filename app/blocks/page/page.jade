@@ -1,6 +1,8 @@
 include ../header/header
+include ../guarantees/guarantees
 
 mixin page()
 	+b('body').page&attributes(attributes)
 		+header()
+		+guarantees()
 		block

@@ -1,0 +1,9 @@
+include ../guarantee/guarantee
+
+mixin guarantees()
+	.container
+		+b.guarantees&attributes(attributes)
+			- const data = getData('guarantees').data;
+			for item in data
+				+guarantee(item.title, item.text, item.icon)
+			block

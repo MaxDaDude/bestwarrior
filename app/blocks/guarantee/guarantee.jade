@@ -1,0 +1,6 @@
+mixin guarantee(title, text, icon)
+	+b.guarantee&attributes(attributes)
+		+icon(icon, false).icon
+		+e.title= title
+		+e.text= text
+		block
