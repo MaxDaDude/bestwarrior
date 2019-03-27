@@ -1,0 +1,14 @@
+include ../problem/problem
+
+mixin problems()
+	.container
+		+b.problems&attributes(attributes)
+			+e.H2.title Столкнулись ли вы в своем инфобизнесе вот с этими проблемами?
+			- const data = getData('problems').data;
+			+e.items
+				for item in data
+					+problem(item.title, item.text)
+			+e.result Если вы все же столкнулись с этими проблемами, то прочитайте этот текст до конца.
+				br
+				| Я уверен, что мое предложение покажется вам очень выгодным.
+			block
